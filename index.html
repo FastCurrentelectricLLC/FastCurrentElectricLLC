@@ -5,42 +5,12 @@
   <title>Fast Current Electric LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      line-height: 1.6;
-      color: #222;
-    }
-    header {
-      background: #0b3c5d;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #0b3c5d;
-    }
-    .services, .tips {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .card {
-      border: 1px solid #ddd;
-      padding: 1rem;
-      border-radius: 5px;
-    }
-    footer {
-      background: #f4f4f4;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
+    body { font-family: Arial, sans-serif; margin:0; line-height:1.6; color:#222; }
+    header { background:#0b3c5d; color:#fff; padding:2rem; text-align:center; }
+    nav { background:#07426a; padding:0.5rem; text-align:center; }
+    nav a { color:#fff; margin:0 1rem; text-decoration:none; font-weight:bold; }
+    section { padding:2rem; max-width:900px; margin:auto; }
+    footer { background:#f4f4f4; text-align:center; padding:1rem; font-size:0.9rem; }
   </style>
 </head>
 <body>
@@ -50,77 +20,18 @@
   <p>Residential Electrical Services & Safety Education</p>
 </header>
 
-<section>
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card">Outlet & Switch Replacement</div>
-    <div class="card">Lighting & Ceiling Fans</div>
-    <div class="card">Electrical Troubleshooting</div>
-    <div class="card">Panel & Safety Inspections</div>
-  </div>
-</section>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="tips.html">DIY Tips</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
 <section>
-  <h2>DIY Electrical Safety Tips</h2>
-  <div class="tips">
-    <div class="card">
-      <strong>Resetting a Breaker</strong>
-      <p>Always turn the breaker fully off before switching it back on.</p>
-    </div>
-    <div class="card">
-      <strong>GFCI Testing</strong>
-      <p>Test GFCI outlets monthly using the test and reset buttons.</p>
-    </div>
-    <div class="card">
-      <strong>Flickering Lights</strong>
-      <p>Frequent flickering can indicate loose wiring and should be inspected.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Why Choose Fast Current Electric</h2>
+  <h2>Welcome to Fast Current Electric LLC</h2>
   <p>
-    We focus on safety, reliability, and education. Our goal is to help
-    homeowners understand when a project is safe to handle and when it is
-    best to call a professional.
-  </p>
-</section>
-
-<section>
-  <h2>Support & Contact</h2>
-  <p>
-    Use the form below to send a message to Fast Current Electric LLC.
-    This form is for non-emergency questions and service requests.
-  </p>
-
-  <form action="https://formspree.io/f/mojqoboz" method="POST">
-    <p>
-      <label>
-        Name<br>
-        <input type="text" name="name" required>
-      </label>
-    </p>
-
-    <p>
-      <label>
-        Phone (optional)<br>
-        <input type="tel" name="phone">
-      </label>
-    </p>
-
-    <p>
-      <label>
-        Message<br>
-        <textarea name="message" rows="4" required></textarea>
-      </label>
-    </p>
-
-    <button type="submit">Send Message</button>
-  </form>
-
-  <p style="font-size: 0.9rem;">
-    For emergencies, call 911.
+    We provide safe, reliable residential electrical services and tips to help homeowners handle basic projects safely.  
+    Navigate through the sections above to learn more, see tips, or contact us for service.
   </p>
 </section>
 
