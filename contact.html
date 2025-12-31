@@ -25,19 +25,14 @@
             2px 2px 0 black;
     }
 
-    section h2 { color: white; font-weight: bold; font-size: 1.8rem; } 
+    section h2 { color: black; font-weight: bold; font-size: 1.8rem; }
     nav { background: #062a40; padding: 0.75rem; text-align: center; }
     nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
     nav a.active { text-decoration: underline; color: #FFD700; }
 
     section { padding: 2rem; max-width: 900px; margin: auto; line-height: 1.6; }
-    form { background: rgba(255,255,255,0.9); padding: 1rem; border-radius: 5px; }
-    form p { margin-bottom: 1rem; }
-    input, textarea { width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
-    button { padding: 0.5rem 1rem; background: #062a40; color: white; border: none; border-radius: 4px; cursor: pointer; }
-    button:hover { background: #0b3c5d; }
-
+    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); margin-bottom: 1rem; }
     footer { background: #f4f4f4; text-align: center; padding: 1rem; font-size: 0.9rem; }
 
     @media (max-width: 600px) { .site-header { flex-direction: column; text-align: center; } }
@@ -76,25 +71,36 @@
 
 <section>
   <h2>Send a Message</h2>
+  <p>Use the form below to contact Fast Current Electric LLC for non-emergency questions or service requests.</p>
+
   <form action="https://formspree.io/f/mojqoboz" method="POST">
     <p>
-      <label>Name<br>
+      <label>
+        Name<br>
         <input type="text" name="name" required>
       </label>
     </p>
+
     <p>
-      <label>Phone (optional)<br>
+      <label>
+        Phone (optional)<br>
         <input type="tel" name="phone">
       </label>
     </p>
+
     <p>
-      <label>Message<br>
+      <label>
+        Message<br>
         <textarea name="message" rows="4" required></textarea>
       </label>
     </p>
+
     <button type="submit">Send Message</button>
   </form>
-  <p style="font-size: 0.9rem;">For emergencies, call 911.</p>
+
+  <p style="font-size: 0.9rem;">
+    For emergencies, call 911.
+  </p>
 </section>
 
 <footer>
