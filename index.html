@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <title>Fast Current Electric LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <style>
     body { font-family: Arial, sans-serif; margin: 0; color: #222; }
     .site-header {
@@ -14,11 +24,21 @@
       color: #fff;
       padding: 1.5rem 2rem;
     }
-    .logo { max-height: 160px; width: auto; }
-    .header-text h1 { margin: 0; }
-    .header-text p { margin: .25rem 0 0; opacity: .9; }
+    .logo { max-height: 160px; }
+    nav {
+      background: #062a40;
+      padding: 0.75rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
     section { padding: 2rem; max-width: 900px; margin: auto; }
-    footer { background: #f4f4f4; text-align: center; padding: 1rem; font-size: .9rem; }
+    footer { background: #f4f4f4; text-align: center; padding: 1rem; }
     @media (max-width: 600px) {
       .site-header { flex-direction: column; text-align: center; }
     }
@@ -28,27 +48,32 @@
 
 <header class="site-header">
   <img src="images/FCELLC.jpg" alt="Fast Current Electric LLC Logo" class="logo">
-  <div class="header-text">
+  <div>
     <h1>Fast Current Electric LLC</h1>
     <p>Residential Electrical Services & Safety Education</p>
   </div>
 </header>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="tips.html">Safety Tips</a>
+  <a href="why-choose-us.html">Why Choose Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
 <section>
   <h2>Welcome</h2>
   <p>
-    Fast Current Electric LLC provides reliable residential electrical services
-    with a focus on safety, education, and honest workmanship.
+    Fast Current Electric LLC provides dependable residential electrical
+    services with a strong focus on safety, quality workmanship, and education.
   </p>
 </section>
 
 <footer>
-  <p>
-    📞 (330) 345-9389 | ✉️ S.henderson@fastcurrentelectric.com
-  </p>
+  <p>📞 (330) 345-9389 | ✉️ S.henderson@fastcurrentelectric.com</p>
   <p>&copy; 2025 Fast Current Electric LLC</p>
 </footer>
 
 </body>
 </html>
-
