@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact an Electrician in Akron OH | Fast Current Electric LLC</title>
-  <meta name="description" content="Contact Fast Current Electric LLC to schedule residential electrical service in Akron OH, Wooster OH, Canton OH, Massillon OH, and surrounding areas.">
+  <title>Contact Fast Current Electric LLC | Akron OH Electrician</title>
+  <meta name="description" content="Contact Fast Current Electric LLC for residential electrical services or questions about safety. Serving Akron OH, Wooster OH, Canton OH, Massillon OH, and nearby areas.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" href="images/favicon.png" type="image/png">
@@ -12,17 +12,27 @@
     body { font-family: Arial, sans-serif; margin: 0; }
     .site-header { display: flex; align-items: center; gap: 1.5rem; background-image: url('images/background.png'); background-size: cover; background-position: center; color: #fff; padding: 1.5rem 2rem; }
     .logo { max-height: 160px; }
-    .site-header h1 { text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
-    section h2 { text-shadow: 1px 1px 2px rgba(0,0,0,0.7); color: #0b3c5d; }
+    .site-header h1 { 
+      text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000,
+                   2px 0 0 #000, 0 2px 0 #000, -2px 0 0 #000, 0 -2px 0 #000;
+    }
+    section h2 { 
+      text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; 
+      color: #0b3c5d; 
+    }
     nav { background: #062a40; padding: 0.75rem; text-align: center; }
     nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
     nav a.active { text-decoration: underline; color: #FFD700; }
     section { padding: 2rem; max-width: 900px; margin: auto; }
-    form input, form textarea { width: 100%; padding: 0.5rem; }
-    button { margin-top: 1rem; padding: 0.5rem 1rem; }
+    form p { margin-bottom: 1rem; }
+    input, textarea { width: 100%; padding: 0.5rem; }
+    button { padding: 0.5rem 1rem; background: #0b3c5d; color: #fff; border: none; cursor: pointer; }
+    button:hover { background: #062a40; }
     footer { background: #f4f4f4; text-align: center; padding: 1rem; }
     @media (max-width: 600px) { .site-header { flex-direction: column; text-align: center; } }
+    a.contact-link { color: #222; text-decoration: none; font-weight: bold; }
+    a.contact-link:hover { text-decoration: underline; }
   </style>
 </head>
 
@@ -30,7 +40,10 @@
 
 <header class="site-header">
   <img src="images/FCELLC.jpg" alt="Logo" class="logo">
-  <h1>Contact Us</h1>
+  <div>
+    <h1>Contact Us</h1>
+    <p>📞 <a href="tel:3303459389" class="contact-link">(330) 345-9389</a> | ✉️ <a href="mailto:S.henderson@fastcurrentelectric.com" class="contact-link">S.henderson@fastcurrentelectric.com</a></p>
+  </div>
 </header>
 
 <nav>
@@ -42,27 +55,30 @@
 </nav>
 
 <section>
-  <p>📞 (330) 345-9389</p>
-  <p>✉️ S.henderson@fastcurrentelectric.com</p>
-
+  <h2>Send a Message</h2>
   <form action="https://formspree.io/f/mojqoboz" method="POST">
-    <label>Name<br><input type="text" name="name" required></label><br><br>
-    <label>Phone<br><input type="tel" name="phone"></label><br><br>
-    <label>Message<br><textarea name="message" rows="4" required></textarea></label><br>
+    <p>
+      <label>Name<br>
+        <input type="text" name="name" required>
+      </label>
+    </p>
+    <p>
+      <label>Phone (optional)<br>
+        <input type="tel" name="phone">
+      </label>
+    </p>
+    <p>
+      <label>Message<br>
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+    </p>
     <button type="submit">Send Message</button>
   </form>
-
-  <h2>Service Area</h2>
-  <p>Fast Current Electric LLC serves Akron, Wooster, Canton, Massillon, Hartville, Barberton, Copley, Portage Lakes, New Franklin, and Canal Fulton, OH.</p>
-
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.8470051148216!2d-81.52690508460984!3d41.08144557929764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f3d54e2294ef%3A0x3a7a8ecf3f8ed07b!2sAkron%2C%20OH!5e0!3m2!1sen!2sus!4v1704432112345!5m2!1sen!2sus"
-    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+  <p style="font-size: 0.9rem;">For emergencies, call 911.</p>
 </section>
 
 <footer>
-  <p>📞 (330) 345-9389 | ✉️ S.henderson@fastcurrentelectric.com</p>
+  <p>📞 <a href="tel:3303459389" class="contact-link">(330) 345-9389</a> | ✉️ <a href="mailto:S.henderson@fastcurrentelectric.com" class="contact-link">S.henderson@fastcurrentelectric.com</a></p>
   <p>&copy; 2025 Fast Current Electric LLC</p>
 </footer>
 
