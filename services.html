@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Services | Fast Current Electric LLC</title>
-  <meta name="description" content="Fast Current Electric LLC provides residential electrical services including outlet replacement, lighting, ceiling fans, and panel inspections in Akron, OH, Wooster, OH, Canton, OH, Massillon, OH, and nearby areas.">
+  <title>Our Services | Fast Current Electric LLC</title>
+  <meta name="description" content="Fast Current Electric LLC offers residential electrical services including outlet replacement, lighting, troubleshooting, and safety inspections in Akron, OH and nearby areas.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" href="images/favicon.png" type="image/png">
 
   <style>
@@ -32,21 +31,13 @@
     nav a.active { text-decoration: underline; color: #FFD700; }
 
     section { padding: 2rem; max-width: 900px; margin: auto; line-height: 1.6; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
     .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); margin-bottom: 1rem; }
     footer { background: #f4f4f4; text-align: center; padding: 1rem; font-size: 0.9rem; }
 
     @media (max-width: 600px) { .site-header { flex-direction: column; text-align: center; } }
 
-    .contact-link {
-      color: white;
-      text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    .contact-link { color: black; text-decoration: none; font-weight: bold; }
     .contact-link:hover { text-decoration: underline; }
   </style>
 </head>
@@ -55,10 +46,7 @@
 
 <header class="site-header">
   <img src="images/FCELLC.jpg" alt="Logo" class="logo">
-  <div>
-    <h1>Fast Current Electric LLC</h1>
-    <p>📞 <a href="tel:3303459389" class="contact-link">(330) 345-9389</a> | ✉️ <a href="mailto:S.henderson@fastcurrentelectric.com" class="contact-link">S.henderson@fastcurrentelectric.com</a></p>
-  </div>
+  <h1>Our Services</h1>
 </header>
 
 <nav>
@@ -70,11 +58,13 @@
 </nav>
 
 <section>
-  <h2>Our Services</h2>
-  <div class="card">Outlet & Switch Replacement</div>
-  <div class="card">Lighting & Ceiling Fans</div>
-  <div class="card">Electrical Troubleshooting</div>
-  <div class="card">Panel & Safety Inspections</div>
+  <h2>What We Offer</h2>
+  <div class="services">
+    <div class="card">Outlet & Switch Replacement</div>
+    <div class="card">Lighting & Ceiling Fans</div>
+    <div class="card">Electrical Troubleshooting</div>
+    <div class="card">Panel & Safety Inspections</div>
+  </div>
 </section>
 
 <footer>
