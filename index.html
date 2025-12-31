@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fast Current Electric LLC | Akron OH Electrician</title>
-  <meta name="description" content="Residential electrical services and DIY safety tips in Akron OH, Wooster OH, Canton OH, Massillon OH, and surrounding areas.">
+  <title>Fast Current Electric LLC</title>
+  <meta name="description" content="Fast Current Electric LLC provides residential electrical services and safety tips for Akron, OH, Wooster, OH, Canton, OH, Massillon, OH, and nearby areas.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" href="images/favicon.png" type="image/png">
@@ -13,7 +13,6 @@
     .site-header { display: flex; align-items: center; gap: 1.5rem; background-image: url('images/background.png'); background-size: cover; background-position: center; color: white; padding: 1.5rem 2rem; }
     .logo { max-height: 160px; width: auto; }
 
-    /* Main header title with solid outline and bold font */
     .site-header h1 {
         color: white;
         font-weight: 900;
@@ -26,8 +25,7 @@
             2px 2px 0 black;
     }
 
-    section h2 { color: white; font-weight: bold; font-size: 1.8rem; } /* No outline */
-
+    section h2 { color: black; font-weight: bold; font-size: 1.8rem; }
     nav { background: #062a40; padding: 0.75rem; text-align: center; }
     nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
@@ -35,12 +33,11 @@
 
     section { padding: 2rem; max-width: 900px; margin: auto; line-height: 1.6; }
     .services, .tips { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); }
+    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); margin-bottom: 1rem; }
     footer { background: #f4f4f4; text-align: center; padding: 1rem; font-size: 0.9rem; }
 
     @media (max-width: 600px) { .site-header { flex-direction: column; text-align: center; } }
 
-    /* Contact info links with outline */
     .contact-link {
       color: white;
       text-shadow:
@@ -103,7 +100,48 @@
 
 <section>
   <h2>Why Choose Fast Current Electric</h2>
-  <p>We focus on safety, reliability, and education. Our goal is to help homeowners understand when a project is safe to handle and when it is best to call a professional.</p>
+  <p>
+    We focus on safety, reliability, and education. Our goal is to help
+    homeowners understand when a project is safe to handle and when it is
+    best to call a professional.
+  </p>
+</section>
+
+<section>
+  <h2>Support & Contact</h2>
+  <p>
+    Use the form below to send a message to Fast Current Electric LLC.
+    This form is for non-emergency questions and service requests.
+  </p>
+
+  <form action="https://formspree.io/f/mojqoboz" method="POST">
+    <p>
+      <label>
+        Name<br>
+        <input type="text" name="name" required>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Phone (optional)<br>
+        <input type="tel" name="phone">
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Message<br>
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+    </p>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p style="font-size: 0.9rem;">
+    For emergencies, call 911.
+  </p>
 </section>
 
 <footer>
