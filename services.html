@@ -9,15 +9,22 @@
   <link rel="icon" href="images/favicon.png" type="image/png">
 
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; }
+    body { font-family: Arial, sans-serif; margin: 0; color: #222; }
     .site-header { display: flex; align-items: center; gap: 1.5rem; background-image: url('images/background.png'); background-size: cover; background-position: center; color: #fff; padding: 1.5rem 2rem; }
-    .logo { max-height: 160px; }
+    .logo { max-height: 160px; width: auto; }
     .site-header h1 { 
-      text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000,
-                   2px 0 0 #000, 0 2px 0 #000, -2px 0 0 #000, 0 -2px 0 #000;
+      text-shadow: 
+         3px 3px 0 #000, -3px 3px 0 #000, 
+         3px -3px 0 #000, -3px -3px 0 #000,
+         3px 0 0 #000, 0 3px 0 #000,
+        -3px 0 0 #000, 0 -3px 0 #000;
     }
     section h2 { 
-      text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; 
+      text-shadow: 
+         2px 2px 0 #000, -2px 2px 0 #000, 
+         2px -2px 0 #000, -2px -2px 0 #000,
+         2px 0 0 #000, 0 2px 0 #000,
+        -2px 0 0 #000, 0 -2px 0 #000;
       color: #0b3c5d; 
     }
     nav { background: #062a40; padding: 0.75rem; text-align: center; }
@@ -26,7 +33,7 @@
     nav a.active { text-decoration: underline; color: #FFD700; }
     section { padding: 2rem; max-width: 900px; margin: auto; }
     ul { line-height: 1.8; }
-    footer { background: #f4f4f4; text-align: center; padding: 1rem; }
+    footer { background: #f4f4f4; text-align: center; padding: 1rem; font-size: 0.9rem; }
     @media (max-width: 600px) { .site-header { flex-direction: column; text-align: center; } }
     a.contact-link { color: #222; text-decoration: none; font-weight: bold; }
     a.contact-link:hover { text-decoration: underline; }
@@ -63,6 +70,7 @@
 
 <footer>
   <p>📞 <a href="tel:3303459389" class="contact-link">(330) 345-9389</a> | ✉️ <a href="mailto:S.henderson@fastcurrentelectric.com" class="contact-link">S.henderson@fastcurrentelectric.com</a></p>
+  <p>&copy; 2025 Fast Current Electric LLC</p>
 </footer>
 
 </body>
