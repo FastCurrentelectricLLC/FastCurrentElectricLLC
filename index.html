@@ -2,50 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Residential Electrician in Akron OH | Fast Current Electric LLC</title>
-  <meta name="description" content="Fast Current Electric LLC provides residential electrical services and safety education in Akron OH, Wooster OH, Canton OH, Massillon OH, Hartville OH, Barberton OH, Copley OH, Portage Lakes OH, New Franklin OH, and Canal Fulton OH.">
+  <title>Fast Current Electric LLC | Akron OH Electrician</title>
+  <meta name="description" content="Residential electrical services and DIY safety tips in Akron OH, Wooster OH, Canton OH, Massillon OH, and surrounding areas.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" href="images/favicon.png" type="image/png">
 
   <style>
     body { font-family: Arial, sans-serif; margin: 0; color: #222; }
-    .site-header { display: flex; align-items: center; gap: 1.5rem; background-image: url('images/background.png'); background-size: cover; background-position: center; color: #fff; padding: 1.5rem 2rem; }
+    .site-header { display: flex; align-items: center; gap: 1.5rem; background-image: url('images/background.png'); background-size: cover; background-position: center; color: white; padding: 1.5rem 2rem; }
     .logo { max-height: 160px; width: auto; }
-    .site-header h1 { 
-      text-shadow: 
-         3px 3px 0 #000, -3px 3px 0 #000, 
-         3px -3px 0 #000, -3px -3px 0 #000,
-         3px 0 0 #000, 0 3px 0 #000,
-        -3px 0 0 #000, 0 -3px 0 #000;
+    .site-header h1 {
+      -webkit-text-stroke: 2px black; /* solid outline */
+      color: white;
+      font-weight: bold;
     }
-    section h2 { 
-      text-shadow: 
-         2px 2px 0 #000, -2px 2px 0 #000, 
-         2px -2px 0 #000, -2px -2px 0 #000,
-         2px 0 0 #000, 0 2px 0 #000,
-        -2px 0 0 #000, 0 -2px 0 #000;
-      color: #0b3c5d; 
+    section h2 {
+      -webkit-text-stroke: 1.5px black;
+      color: white;
+      font-weight: bold;
     }
     nav { background: #062a40; padding: 0.75rem; text-align: center; }
     nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
     nav a.active { text-decoration: underline; color: #FFD700; }
-    section { padding: 2rem; max-width: 900px; margin: auto; }
+    section { padding: 2rem; max-width: 900px; margin: auto; line-height: 1.6; }
+    .services, .tips { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); }
     footer { background: #f4f4f4; text-align: center; padding: 1rem; font-size: 0.9rem; }
     @media (max-width: 600px) { .site-header { flex-direction: column; text-align: center; } }
-    a.contact-link { color: #222; text-decoration: none; font-weight: bold; }
-    a.contact-link:hover { text-decoration: underline; }
+    .contact-link { color: white; -webkit-text-stroke: 1px black; text-decoration: none; font-weight: bold; }
+    .contact-link:hover { text-decoration: underline; }
   </style>
 </head>
 
 <body>
 
 <header class="site-header">
-  <img src="images/FCELLC.jpg" alt="Fast Current Electric LLC Logo" class="logo">
+  <img src="images/FCELLC.jpg" alt="Logo" class="logo">
   <div>
     <h1>Fast Current Electric LLC</h1>
-    <p>Residential Electrical Services & Safety Education</p>
     <p>📞 <a href="tel:3303459389" class="contact-link">(330) 345-9389</a> | ✉️ <a href="mailto:S.henderson@fastcurrentelectric.com" class="contact-link">S.henderson@fastcurrentelectric.com</a></p>
   </div>
 </header>
@@ -59,12 +55,36 @@
 </nav>
 
 <section>
-  <h2>Serving Northeast Ohio</h2>
-  <p>
-    Fast Current Electric LLC proudly serves Akron, Wooster, Canton, Massillon,
-    Hartville, Barberton, Copley, Portage Lakes, New Franklin, and Canal Fulton.
-    We focus on safe, reliable residential electrical work and homeowner education.
-  </p>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">Outlet & Switch Replacement</div>
+    <div class="card">Lighting & Ceiling Fans</div>
+    <div class="card">Electrical Troubleshooting</div>
+    <div class="card">Panel & Safety Inspections</div>
+  </div>
+</section>
+
+<section>
+  <h2>DIY Electrical Safety Tips</h2>
+  <div class="tips">
+    <div class="card">
+      <strong>Resetting a Breaker</strong>
+      <p>Always turn the breaker fully off before switching it back on.</p>
+    </div>
+    <div class="card">
+      <strong>GFCI Testing</strong>
+      <p>Test GFCI outlets monthly using the test and reset buttons.</p>
+    </div>
+    <div class="card">
+      <strong>Flickering Lights</strong>
+      <p>Frequent flickering can indicate loose wiring and should be inspected.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose Fast Current Electric</h2>
+  <p>We focus on safety, reliability, and education. Our goal is to help homeowners understand when a project is safe to handle and when it is best to call a professional.</p>
 </section>
 
 <footer>
