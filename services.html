@@ -34,9 +34,16 @@
     section h2 { color: black; font-weight: bold; font-size: 1.8rem; margin-bottom: 1rem; }
 
     .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); text-align: left; }
-    .card img { width: 100%; height: auto; border-radius: 5px; margin-bottom: 0.5rem; }
-    .card small { display: block; margin-top: 0.25rem; color: #555; font-size: 0.85rem; line-height: 1.3; }
+    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); text-align: center; }
+
+    .card img { max-width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 0.5rem; }
+    .card small {
+      display: block;
+      margin-top: 0.25rem;
+      color: #555;
+      font-size: 0.85rem;
+      line-height: 1.3;
+    }
 
     footer { background: #f4f4f4; text-align: center; padding: 1rem; font-size: 0.9rem; }
     .contact-link { color: black; text-decoration: none; font-weight: bold; }
@@ -62,10 +69,10 @@
 <section>
   <h2>What We Offer</h2>
   <div class="services">
-    <div class="card"><img src="images/panel.jpg" alt="Circuit Breaker Installation">Circuit Breaker Installation<small>Installing new breakers for safe and reliable electrical service in your home.</small></div>
+    <div class="card"><img src="images/panel.jpg" alt="Outlet & Switch Replacement">Outlet & Switch Replacement<small>Adding new outlets and switches to improve convenience and accessibility.</small></div>
     <div class="card"><img src="images/light-bulbs.jpg" alt="Electric Inspection">Electric Inspection<small>Detailed system safety checks to identify hazards and ensure code compliance.</small></div>
-    <div class="card"><img src="images/panel.jpg" alt="Electric Panel Installation">Electric Panel Installation<small>New service panel installation for increased capacity and safety.</small></div>
-    <div class="card"><img src="images/wires.jpg" alt="Electric Repair">Electric Repair<small>Repairing faulty connections, circuits, and system components to restore function.</small></div>
+    <div class="card"><img src="images/wires.jpg" alt="Electric Panel Installation">Electric Panel Installation<small>New service panel installation for increased capacity and safety.</small></div>
+    <div class="card"><img src="images/outlet-installation.jpg" alt="Electrical Troubleshooting">Electrical Troubleshooting<small>Diagnosing and fixing electrical issues to restore system functionality.</small></div>
     <div class="card"><img src="images/wire-in-outlet.jpg" alt="Wire Repair">Wire Repair<small>Fixing damaged, frayed, or outdated wiring for improved safety and reliability.</small></div>
     <div class="card"><img src="images/generator.jpg" alt="Generator Installation">Generator Installation<small>Backup power setup to keep essential systems running during outages.</small></div>
     <div class="card"><img src="images/light-bulbs.jpg" alt="Light Fixture Repair">Light Fixture Repair<small>Restoring lighting fixtures and diagnosing wiring problems.</small></div>
@@ -81,7 +88,7 @@
 </section>
 
 <footer>
-  <p><a href="tel:3302349389" class="contact-link">(330) 234-9389</a> | <a href="mailto:S.henderson@fastcurrentelectric.com" class="contact-link">S.henderson@fastcurrentelectric.com</a></p>
+  <p><a href="tel:3302349389" class="contact-link">330 234 9389</a> | <a href="mailto:S.henderson@fastcurrentelectric.com" class="contact-link">S.henderson@fastcurrentelectric.com</a></p>
   <p>&copy; 2025 Fast Current Electric LLC</p>
 </footer>
 
