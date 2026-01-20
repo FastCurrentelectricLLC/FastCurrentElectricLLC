@@ -1,160 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Services | Fast Current Electric LLC</title>
-  <meta name="description" content="Explore the residential electrical services offered by Fast Current Electric LLC in Akron, OH, Wooster, OH, Canton, OH, Massillon, OH, and nearby areas.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/favicon.png" type="image/png">
-
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; color: #222; text-align: center; }
-    .site-header { display: flex; flex-direction: column; align-items: center; background-image: url('images/background.png'); background-size: cover; background-position: center; color: white; padding: 1.5rem 2rem; }
-    .logo { max-height: 160px; width: auto; margin-bottom: 1rem; }
-
-    .site-header h1 {
-        color: white;
-        font-weight: 900;
-        font-family: 'Arial Black', Arial, sans-serif;
-        font-size: 2.8rem;
-        text-shadow:-2px -2px 0 black,2px -2px 0 black,-2px 2px 0 black,2px 2px 0 black;
-        margin: 0;
-    }
-
-    nav { background: #062a40; padding: 0.75rem; }
-    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    nav a.active { text-decoration: underline; color: #FFD700; }
-
-    section { padding: 2rem; max-width: 900px; margin: auto; line-height: 1.6; }
-    section h2 { color: black; font-weight: bold; font-size: 1.8rem; margin-bottom: 1rem; }
-
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); text-align: left; }
-    .card img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 0.5rem; }
-    .card small { display: block; margin-top: 0.25rem; color: #555; font-size: 0.85rem; line-height: 1.3; }
-
-    footer { background: #f4f4f4; text-align: center; padding: 1rem; font-size: 0.9rem; }
-    .contact-link { color: black; text-decoration: none; font-weight: bold; }
-    .contact-link:hover { text-decoration: underline; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electrical Services | FCELLC</title>
+<link rel="icon" type="image/png" href="pictures/favicon.png">
+<style>
+body { margin:0; font-family:Arial, sans-serif; background:#f8f8f8; color:#222; }
+header {
+    background: url("pictures/background.png") center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+section { padding: 40px 20px; max-width: 1200px; margin: auto; }
+.cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.card {
+    background:white;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+.card img {
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:6px;
+    margin-bottom:12px;
+}
+footer {
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
 </head>
-
 <body>
 
-<header class="site-header">
-  <img src="images/FCELLC.jpg" alt="Logo" class="logo">
-  <h1>Services</h1>
+<header>
+    FCELLC Electrical Services
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="services.html" class="active">Services</a>
-  <a href="tips.html">Safety Tips</a>
-  <a href="why-choose-us.html">Why Choose Us</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
 <section>
-  <h2>What We Offer</h2>
-  <div class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
 
-    <div class="card">
-      <img src="images/panel.jpg" alt="Outlet & Switch Replacement">
-      <strong>Outlet & Switch Replacement</strong>
-      <small>Adding new outlets and switches to improve convenience and accessibility.</small>
+        <!-- Outlet & Switch Replacement -->
+        <div class="card">
+            <img src="pictures/Wire Repair.jpg" alt="Outlet and Switch Replacement">
+            <h3>Outlet & Switch Replacement</h3>
+            <p>We safely replace damaged or outdated outlets and switches to ensure reliable operation and compliance with safety standards.</p>
+        </div>
+
+        <!-- Electrical Troubleshooting -->
+        <div class="card">
+            <img src="pictures/Electric Repair.jpg" alt="Electrical Troubleshooting">
+            <h3>Electrical Troubleshooting</h3>
+            <p>We diagnose electrical faults including shorts, tripping breakers, noise, and flickering lights to restore system stability.</p>
+        </div>
+
+        <!-- EV Charger Installation -->
+        <div class="card">
+            <img src="pictures/car charging.jpg" alt="EV Charger Installation">
+            <h3>EV Charger Installation</h3>
+            <p>Level 1 and Level 2 EV charger installation for safe, efficient home charging compatible with modern electric vehicles.</p>
+        </div>
+
+        <!-- Indoor & Outdoor Lighting -->
+        <div class="card">
+            <img src="pictures/Light Fixture Repair.jpg" alt="Lighting Services">
+            <h3>Indoor & Outdoor Lighting</h3>
+            <p>Installation and servicing of lighting fixtures for improved visibility, ambiance, and safety around the home or business.</p>
+        </div>
+
+        <!-- Generator Installation -->
+        <div class="card">
+            <img src="pictures/generator.jpg" alt="Generator Installation">
+            <h3>Generator Installation</h3>
+            <p>Backup generator installation keeps your home powered during outages and unexpected grid failures.</p>
+        </div>
+
+        <!-- Electrical Panel Upgrades -->
+        <div class="card">
+            <img src="pictures/Electric Panel Upgrades.jpg" alt="Panel Upgrades">
+            <h3>Electrical Panel Upgrades</h3>
+            <p>We upgrade outdated panels to support higher electrical loads and comply with modern safety requirements.</p>
+        </div>
+
+        <!-- Whole-Home Rewire -->
+        <div class="card">
+            <img src="pictures/Wire Installation.JPG" alt="Whole Home Rewire">
+            <h3>Whole-Home Rewire</h3>
+            <p>Complete rewiring services to update aging electrical systems and improve long-term safety and reliability.</p>
+        </div>
+
+        <!-- Electrical Installation & Replacement -->
+        <div class="card">
+            <img src="pictures/Electric Installation or Replacement.jpg" alt="Electrical Installation">
+            <h3>Electrical Installation & Replacement</h3>
+            <p>We install and replace wiring, circuits, fixtures, and electrical equipment for new or existing structures.</p>
+        </div>
+
+        <!-- Circuit Breaker Repair -->
+        <div class="card">
+            <img src="pictures/Circuit Breaker Repair.jpg" alt="Circuit Breaker Repair">
+            <h3>Circuit Breaker Repair</h3>
+            <p>Breaker repair services resolve trips, failures, or overheating components to maintain electrical protection.</p>
+        </div>
+
+        <!-- Circuit Breaker Installation -->
+        <div class="card">
+            <img src="pictures/Circuit Breaker Installation.jpg" alt="Circuit Breaker Installation">
+            <h3>Circuit Breaker Installation</h3>
+            <p>New breaker installations for additions, remodels, and expanded electrical requirements with load balancing.</p>
+        </div>
+
     </div>
-
-    <div class="card">
-      <img src="images/outlet installation.jpg" alt="Electrical Troubleshooting">
-      <strong>Electrical Troubleshooting</strong>
-      <small>Diagnosing and resolving electrical issues for safe, reliable service.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/placeholder.jpg" alt="Electric Panel Upgrades">
-      <strong>Electric Panel Upgrades</strong>
-      <small>Upgrading your electrical panel to handle increased capacity and safety needs.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/wires.jpg" alt="Wire Repair">
-      <strong>Wire Repair</strong>
-      <small>Fixing damaged, frayed, or outdated wiring to improve safety and reliability.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/car charging.jpg" alt="EV Charging Station">
-      <strong>Electric Vehicle Charging Station Installation</strong>
-      <small>Providing home charging solutions for electric vehicles.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/light-bulbs.jpg" alt="Light Fixture Installation">
-      <strong>Light Fixture Installation</strong>
-      <small>Installing indoor and outdoor lighting fixtures for improved comfort and style.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/generator.jpg" alt="Generator Installation">
-      <strong>Generator Installation</strong>
-      <small>Setting up backup power systems to keep essential systems running during outages.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/placeholder.jpg" alt="Electric Repair">
-      <strong>Electric Repair</strong>
-      <small>Repairing faulty connections, circuits, and system components to restore function.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/placeholder.jpg" alt="Light Fixture Repair">
-      <strong>Light Fixture Repair</strong>
-      <small>Restoring lighting fixtures and diagnosing wiring problems.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/placeholder.jpg" alt="Circuit Breaker Installation">
-      <strong>Circuit Breaker Installation</strong>
-      <small>Installing new breakers for safe and reliable electrical service in your home.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/placeholder.jpg" alt="Circuit Breaker Repair">
-      <strong>Circuit Breaker Repair</strong>
-      <small>Diagnosing breaker failures and restoring proper electrical protection.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/placeholder.jpg" alt="Electric Panel Repair">
-      <strong>Electric Panel Repair</strong>
-      <small>Correcting panel issues to ensure safe and consistent power distribution.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/placeholder.jpg" alt="Wire Installation">
-      <strong>Wire Installation</strong>
-      <small>Running new wiring for remodels, additions, or upgraded systems.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/wire in outlet.jpg" alt="Outlet Repair">
-      <strong>Outlet Repair</strong>
-      <small>Fixing dead, damaged, or unsafe outlets and switches.</small>
-    </div>
-
-    <div class="card">
-      <img src="images/placeholder.jpg" alt="Electric Installation or Replacement">
-      <strong>Electric Installation or Replacement</strong>
-      <small>Installing or upgrading electrical components and equipment.</small>
-    </div>
-
-  </div>
 </section>
 
 <footer>
-  <p><a href="tel:3302349389" class="contact-link">330 234 9389</a> | <a href="mailto:S.henderson@fastcurrentelectric.com" class="contact-link">S.henderson@fastcurrentelectric.com</a></p>
-  <p>&copy; 2025 Fast Current Electric LLC</p>
+    FCELLC • Tampa, Florida • 330-234-9389
 </footer>
 
 </body>
