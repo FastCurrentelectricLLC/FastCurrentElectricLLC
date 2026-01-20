@@ -16,16 +16,16 @@
       text-align: center;
     }
 
-    /* Header styling: only logo on left */
+    /* Header styling: logo on left, taller vertical space */
     .site-header {
-      display: flex;                  /* Flexbox layout */
-      flex-direction: row;            /* Horizontal layout */
-      align-items: center;            /* Vertically center items */
-      justify-content: flex-start;    /* Align items to the left */
-      background-image: url('images/background.png'); /* Header background */
+      display: flex;                  
+      flex-direction: row;            
+      align-items: center;            
+      justify-content: flex-start;    
+      background-image: url('images/background.png'); 
       background-size: cover;
       background-position: center;
-      padding: 1.5rem 2rem;
+      padding: 3rem 2rem;  /* Increased vertical padding for taller header */
     }
 
     /* Logo styling */
@@ -117,7 +117,7 @@
 
 <body>
 
-  <!-- Header: only logo on left -->
+  <!-- Header: only logo on left with taller spacing -->
   <header class="site-header">
     <img src="images/FCELLC.png" alt="Fast Current Electric Logo" class="logo">
   </header>
