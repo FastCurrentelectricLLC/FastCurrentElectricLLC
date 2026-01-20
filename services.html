@@ -34,16 +34,9 @@
     section h2 { color: black; font-weight: bold; font-size: 1.8rem; margin-bottom: 1rem; }
 
     .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); text-align: center; }
-
-    .card img { max-width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 0.5rem; }
-    .card small {
-      display: block;
-      margin-top: 0.25rem;
-      color: #555;
-      font-size: 0.85rem;
-      line-height: 1.3;
-    }
+    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); text-align: left; }
+    .card img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 0.5rem; }
+    .card small { display: block; margin-top: 0.25rem; color: #555; font-size: 0.85rem; line-height: 1.3; }
 
     footer { background: #f4f4f4; text-align: center; padding: 1rem; font-size: 0.9rem; }
     .contact-link { color: black; text-decoration: none; font-weight: bold; }
@@ -69,21 +62,97 @@
 <section>
   <h2>What We Offer</h2>
   <div class="services">
-    <div class="card"><img src="images/panel.jpg" alt="Outlet & Switch Replacement">Outlet & Switch Replacement<small>Adding new outlets and switches to improve convenience and accessibility.</small></div>
-    <div class="card"><img src="images/light-bulbs.jpg" alt="Electric Inspection">Electric Inspection<small>Detailed system safety checks to identify hazards and ensure code compliance.</small></div>
-    <div class="card"><img src="images/wires.jpg" alt="Electric Panel Installation">Electric Panel Installation<small>New service panel installation for increased capacity and safety.</small></div>
-    <div class="card"><img src="images/outlet-installation.jpg" alt="Electrical Troubleshooting">Electrical Troubleshooting<small>Diagnosing and fixing electrical issues to restore system functionality.</small></div>
-    <div class="card"><img src="images/wire-in-outlet.jpg" alt="Wire Repair">Wire Repair<small>Fixing damaged, frayed, or outdated wiring for improved safety and reliability.</small></div>
-    <div class="card"><img src="images/generator.jpg" alt="Generator Installation">Generator Installation<small>Backup power setup to keep essential systems running during outages.</small></div>
-    <div class="card"><img src="images/light-bulbs.jpg" alt="Light Fixture Repair">Light Fixture Repair<small>Restoring lighting fixtures and diagnosing wiring problems.</small></div>
-    <div class="card"><img src="images/outlet-installation.jpg" alt="Outlet Repair">Outlet Repair<small>Fixing dead, damaged, or unsafe outlets and switches.</small></div>
-    <div class="card">Circuit Breaker Repair<small>Diagnosing breaker failures and restoring proper electrical protection.</small></div>
-    <div class="card">Electric Installation or Replacement<small>Installing or upgrading electrical components and equipment.</small></div>
-    <div class="card">Electric Panel Repair<small>Correcting panel issues to ensure safe and consistent power distribution.</small></div>
-    <div class="card">Wire Installation<small>Running new wiring for remodels, additions, or upgraded systems.</small></div>
-    <div class="card"><img src="images/car-charging.jpg" alt="Electric Vehicle Charging Station Installation">Electric Vehicle Charging Station Installation<small>Home charging solutions for electric vehicles.</small></div>
-    <div class="card">Light Fixture Installation<small>Installing indoor and outdoor lighting fixtures for improved comfort and style.</small></div>
-    <div class="card"><img src="images/outlet-installation.jpg" alt="Outlet Installation">Outlet Installation<small>Adding new outlets and switches to improve convenience and accessibility.</small></div>
+
+    <div class="card">
+      <img src="images/panel.jpg" alt="Outlet & Switch Replacement">
+      <strong>Outlet & Switch Replacement</strong>
+      <small>Adding new outlets and switches to improve convenience and accessibility.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/outlet installation.jpg" alt="Electrical Troubleshooting">
+      <strong>Electrical Troubleshooting</strong>
+      <small>Diagnosing and resolving electrical issues for safe, reliable service.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/wire in outlet.jpg" alt="Electric Panel Upgrades">
+      <strong>Electric Panel Upgrades</strong>
+      <small>Upgrading your electrical panel to handle increased capacity and safety needs.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/wires.jpg" alt="Wire Repair">
+      <strong>Wire Repair</strong>
+      <small>Fixing damaged, frayed, or outdated wiring to improve safety and reliability.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/car charging.jpg" alt="Electric Vehicle Charging Station Installation">
+      <strong>Electric Vehicle Charging Station Installation</strong>
+      <small>Providing home charging solutions for electric vehicles.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/light-bulbs.jpg" alt="Light Fixture Installation">
+      <strong>Light Fixture Installation</strong>
+      <small>Installing indoor and outdoor lighting fixtures for improved comfort and style.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/generator.jpg" alt="Generator Installation">
+      <strong>Generator Installation</strong>
+      <small>Setting up backup power systems to keep essential systems running during outages.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholder.jpg" alt="Electric Repair">
+      <strong>Electric Repair</strong>
+      <small>Repairing faulty connections, circuits, and system components to restore function.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholder.jpg" alt="Light Fixture Repair">
+      <strong>Light Fixture Repair</strong>
+      <small>Restoring lighting fixtures and diagnosing wiring problems.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholder.jpg" alt="Circuit Breaker Installation">
+      <strong>Circuit Breaker Installation</strong>
+      <small>Installing new breakers for safe and reliable electrical service in your home.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholder.jpg" alt="Circuit Breaker Repair">
+      <strong>Circuit Breaker Repair</strong>
+      <small>Diagnosing breaker failures and restoring proper electrical protection.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholder.jpg" alt="Electric Panel Repair">
+      <strong>Electric Panel Repair</strong>
+      <small>Correcting panel issues to ensure safe and consistent power distribution.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholder.jpg" alt="Wire Installation">
+      <strong>Wire Installation</strong>
+      <small>Running new wiring for remodels, additions, or upgraded systems.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholder.jpg" alt="Outlet Repair">
+      <strong>Outlet Repair</strong>
+      <small>Fixing dead, damaged, or unsafe outlets and switches.</small>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholder.jpg" alt="Electric Installation or Replacement">
+      <strong>Electric Installation or Replacement</strong>
+      <small>Installing or upgrading electrical components and equipment.</small>
+    </div>
+
   </div>
 </section>
 
