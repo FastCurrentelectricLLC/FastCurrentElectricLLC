@@ -9,7 +9,11 @@
 
   <style>
     body { font-family: Arial, sans-serif; margin: 0; color: #222; text-align: center; }
-    .site-header { display: flex; flex-direction: column; align-items: center; background-image: url('images/background.png'); background-size: cover; background-position: center; color: white; padding: 1.5rem 2rem; }
+    .site-header { 
+      display: flex; flex-direction: column; align-items: center;
+      background-image: url('images/background.png'); background-size: cover;
+      background-position: center; color: white; padding: 1.5rem 2rem;
+    }
     .logo { max-height: 160px; width: auto; margin-bottom: 1rem; }
 
     .site-header h1 {
@@ -19,9 +23,9 @@
         font-size: 2.8rem;
         text-shadow:
             -2px -2px 0 black,
-            2px -2px 0 black,
-            -2px 2px 0 black,
-            2px 2px 0 black;
+             2px -2px 0 black,
+            -2px  2px 0 black,
+             2px  2px 0 black;
         margin: 0;
     }
 
@@ -30,22 +34,55 @@
     nav a:hover { text-decoration: underline; }
     nav a.active { text-decoration: underline; color: #FFD700; }
 
-    section { padding: 2rem; max-width: 900px; margin: auto; line-height: 1.6; }
-    section h2 { color: black; font-weight: bold; font-size: 1.8rem; margin-bottom: 1rem; }
+    section { padding: 2rem; max-width: 1100px; margin: auto; line-height: 1.6; }
+    section h2 { color: black; font-weight: bold; font-size: 2rem; margin-bottom: 1.5rem; }
 
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background: rgba(255,255,255,0.9); }
-
-    .card small {
-      display: block;
-      margin-top: 0.25rem;
-      color: #555;
-      font-size: 0.85rem;
-      line-height: 1.3;
+    .services { 
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
     }
 
-    footer { background: #f4f4f4; text-align: center; padding: 1rem; font-size: 0.9rem; }
-    .contact-link { color: black; text-decoration: none; font-weight: bold; }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.95);
+      padding: 1rem;
+      text-align: left;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: .75rem;
+    }
+
+    .card h3 {
+      margin: 0 0 .5rem 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: .95rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .contact-link { 
+      color: black; 
+      text-decoration: none; 
+      font-weight: bold; 
+    }
     .contact-link:hover { text-decoration: underline; }
   </style>
 </head>
@@ -67,27 +104,56 @@
 
 <section>
   <h2>What We Offer</h2>
+
   <div class="services">
-    <div class="card">Circuit Breaker Installation<small>Installing new breakers for safe and reliable electrical service in your home.</small></div>
-    <div class="card">Electric Inspection<small>Detailed system safety checks to identify hazards and ensure code compliance.</small></div>
-    <div class="card">Electric Panel Installation<small>New service panel installation for increased capacity and safety.</small></div>
-    <div class="card">Electric Repair<small>Repairing faulty connections, circuits, and system components to restore function.</small></div>
-    <div class="card">Wire Repair<small>Fixing damaged, frayed, or outdated wiring for improved safety and reliability.</small></div>
-    <div class="card">Generator Installation<small>Backup power setup to keep essential systems running during outages.</small></div>
-    <div class="card">Light Fixture Repair<small>Restoring lighting fixtures and diagnosing wiring problems.</small></div>
-    <div class="card">Outlet Repair<small>Fixing dead, damaged, or unsafe outlets and switches.</small></div>
-    <div class="card">Circuit Breaker Repair<small>Diagnosing breaker failures and restoring proper electrical protection.</small></div>
-    <div class="card">Electric Installation or Replacement<small>Installing or upgrading electrical components and equipment.</small></div>
-    <div class="card">Electric Panel Repair<small>Correcting panel issues to ensure safe and consistent power distribution.</small></div>
-    <div class="card">Wire Installation<small>Running new wiring for remodels, additions, or upgraded systems.</small></div>
-    <div class="card">Electric Vehicle Charging Station Installation<small>Home charging solutions for electric vehicles.</small></div>
-    <div class="card">Light Fixture Installation<small>Installing indoor and outdoor lighting fixtures for improved comfort and style.</small></div>
-    <div class="card">Outlet Installation<small>Adding new outlets and switches to improve convenience and accessibility.</small></div>
+    
+    <div class="card">
+      <img src="images/outlet installation.jpg" alt="Outlet & Switch Replacement">
+      <h3>Outlet & Switch Replacement</h3>
+      <p>Repair or upgrade malfunctioning or outdated outlets and switches to improve safety and reliability in your home.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/light-bulbs.jpg" alt="Lighting & Ceiling Fans">
+      <h3>Lighting & Ceiling Fans</h3>
+      <p>Install or replace lighting fixtures and ceiling fans for improved visibility, comfort, and energy efficiency.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/Wires.jpg" alt="Electrical Troubleshooting">
+      <h3>Electrical Troubleshooting</h3>
+      <p>Diagnose and repair electrical issues such as flickering lights, power loss, and wiring failures.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/panel.jpg" alt="Panel & Safety Inspections">
+      <h3>Panel & Safety Inspections</h3>
+      <p>Inspect electrical panels, wiring, and circuits to ensure compliance with safety codes and prevent hazards.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/wire in outlet.jpg" alt="Electrical Panel Upgrades">
+      <h3>Electrical Panel Upgrades</h3>
+      <p>Upgrade aging electrical panels to support modern appliances and increased power demands safely and efficiently.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/car charging.jpg" alt="EV Charger Installation">
+      <h3>EV Charger Installation</h3>
+      <p>Install electric vehicle charging stations in residential homes for convenient and dependable charging access.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/generator.jpg" alt="Generator Installation">
+      <h3>Generator Installation</h3>
+      <p>Install backup power generators to keep essential circuits running during outages and severe weather events.</p>
+    </div>
+
   </div>
 </section>
 
 <footer>
-  <p><a href="tel:3303459389" class="contact-link">(330) 234-9389</a> | <a href="mailto:S.henderson@fastcurrentelectric.com" class="contact-link">S.henderson@fastcurrentelectric.com</a></p>
+  <p><a href="tel:3302349389" class="contact-link">(330) 234-9389</a> | <a href="mailto:S.henderson@fastcurrentelectric.com" class="contact-link">S.henderson@fastcurrentelectric.com</a></p>
   <p>&copy; 2025 Fast Current Electric LLC</p>
 </footer>
 
